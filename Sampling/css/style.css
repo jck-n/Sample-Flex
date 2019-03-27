@@ -1,0 +1,7 @@
+/* This is where any game-content related CSS is stored. */
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+}
