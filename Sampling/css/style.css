@@ -9,23 +9,40 @@ h6 {
 }
 
 body {
-    background: linear-gradient(90deg, #676767, #FFFFFF);
+    background: linear-gradient(90deg, #4e4e4e, #FFFFFF);
     font-family: 'Poppins', sans-serif;
 }
-
 /* This is the navbar related CSS. */
 .nav {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
     /* border: 1px solid red; */
-    background: #AFAFAF;
-    padding: 30px 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    background: linear-gradient(90deg, #4e4e4e, #FFFFFF);
 }
+
+/* Mobile support for body and nav */
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(180deg, #4e4e4e, #FFFFFF);
+    }
+    .nav {
+        background: #4e4e4e;
+    }
+}
+/* Navbar CSS continues here */
 
 .nav a {
     text-decoration: none;
-    margin: auto 10px;
+    margin-right: 15px;
+    color: #AFAFAF;
 }
 
 /* This is where any container related CSS is stored. */
@@ -37,13 +54,21 @@ body {
     text-align: center;
     /* border: 1px solid red; */
 }
-.game-container {
+.content-container {
     display: flex;
     justify-content: center;
     width: 420px;
     height: 210px;
-    border: 1px solid red;
-    margin: 30px 20px;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    background: #AFAFAF;
+    border-radius: 5%;
+}
+
+.content-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
 }
 
 /* This is where the header CSS is stored. */
@@ -51,9 +76,16 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-content: center;
+    margin-top: 80px;
     
+}
+
+.header-masthead {
+    display: flex;
+    margin-top: 80px;
+    color: #AFAFAF;
 }
 
 .header-image {
