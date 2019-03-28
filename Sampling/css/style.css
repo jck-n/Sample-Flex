@@ -1,7 +1,64 @@
-/* This is where any game-content related CSS is stored. */
+/* This is website-wide CSS. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(90deg, #676767, #FFFFFF);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* This is the navbar related CSS. */
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    /* border: 1px solid red; */
+    background: #AFAFAF;
+    padding: 30px 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: auto 10px;
+}
+
+/* This is where any container related CSS is stored. */
 .content {
     display: flex;
-    flex-flow: column wrap;
+    justify-content: space-around;
+    flex-flow: row wrap;
     align-content: center;
     text-align: center;
+    /* border: 1px solid red; */
+}
+.game-container {
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    height: 210px;
+    border: 1px solid red;
+    margin: 30px 20px;
+}
+
+/* This is where the header CSS is stored. */
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 1px solid red;
+    align-content: center;
+    
+}
+
+.header-image {
+    width: 310px;
+    height: 206.5px;
+    border-radius: 50%;
+    
 }
