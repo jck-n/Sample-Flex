@@ -10,7 +10,7 @@ h6 {
 }
 
 body, button {
-    background:#AFAFAF;
+    background:#989898;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -33,7 +33,7 @@ body, button {
 }
 .nav-item {
     text-decoration: none;
-    color: rgb(133, 133, 133);
+    color: #686868;
     margin: 0px 10px;
 }
 /* This is where any container related CSS is stored. */
@@ -86,7 +86,7 @@ body, button {
 .header-masthead {
     display: flex;
     margin-top: 80px;
-    color: rgb(133, 133, 133);
+    color: #686868;
 }
 
 .header-image {
@@ -96,7 +96,7 @@ body, button {
 }
 /* This is the spinner illusion's CSS. */
 .illusion-container {
-    display: none;
+    display: flex;
     justify-content: space-around;
     margin: 100px auto;
 }
