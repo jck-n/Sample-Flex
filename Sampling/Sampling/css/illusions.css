@@ -1,0 +1,134 @@
+/* This is website-wide CSS for the first page. Take note that from here on out any commented CSS code
+is purely there for debugging reasons, other comments are organizational. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+body, button {
+    background:#AFAFAF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* This is the navbar related CSS. */
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    background: #AEAEAE;
+        /* border: 1px solid red; */
+}
+.nav-item {
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+    margin: 0px 10px;
+}
+/* This is where any container related CSS is stored. */
+.content {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-content: center;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.content-container, .spinner-masthead {
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    height: 210px;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    background: rgb(133, 133, 133);
+    border-radius: 5%;
+}
+.spinner-masthead{
+    display: none;
+}
+.content-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.content-button {
+    background: none;
+}
+/* This is where the header CSS is stored. */
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    align-content: center;
+    margin-top: 80px;
+    
+}
+
+.header-masthead {
+    display: flex;
+    margin-top: 80px;
+    color: rgb(133, 133, 133);
+}
+
+.header-image {
+    width: 310px;
+    height: 206.5px;
+    border-radius: 50%;   
+}
+/* This is the spinner illusion's CSS. */
+.illusion-container {
+    display: none;
+    justify-content: space-around;
+    margin: 100px auto;
+}
+.illusion-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+.illusion-square {
+    background: black;
+    width: 110px;
+    height: 110px;
+}
+.square-left{
+    margin-right: 80px;
+}
+.square-bottom {
+    margin-top: 80px;
+}
+.illusion-spinner{
+    margin-top: 50px;
+    background: #4B4B4C;
+    width: 200px;
+    height: 200px;
+    animation-name: illusion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes illusion {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
