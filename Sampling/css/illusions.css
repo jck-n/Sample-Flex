@@ -79,7 +79,7 @@ body, button {
     justify-content: space-around;
     /* border: 1px solid red; */
     align-content: center;
-    margin-top: 80px;
+    margin: 80px 0px 30px 0px;
     
 }
 
@@ -109,26 +109,26 @@ body, button {
 }
 .illusion-square {
     background: black;
-    width: 110px;
-    height: 110px;
+    width: 130px;
+    height: 130px;
 }
 .square-left{
-    margin-right: 80px;
+    margin-right: 40px;
 }
 .square-bottom {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .illusion-spinner{
     margin-top: 50px;
-    background: #4B4B4C;
+    background: #aeaeae;
     width: 200px;
     height: 200px;
     animation-name: illusion;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 @keyframes illusion {
     0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    100% {transform: rotate(-360deg);}
 }
