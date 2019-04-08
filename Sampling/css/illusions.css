@@ -38,7 +38,6 @@ body, button {
 }
 /* This is where any container related CSS is stored. */
 .content {
-    margin-top: 80px;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -58,6 +57,9 @@ body, button {
 }
 .spinner-masthead{
     display: none;
+}
+.spinner-button{
+    margin-top: 10px;
 }
 .content-container img {
     width: 100%;
